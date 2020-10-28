@@ -15,6 +15,7 @@ export default {
   }),
   methods: {
     send() {
+      console.log(this.text)
       this.$socket.emit(
         "createMessage",
         {
